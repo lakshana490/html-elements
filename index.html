@@ -7,38 +7,52 @@
 </head>
 <body>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Styling Examples</title>
-    <!-- Internal CSS -->
+   
     <style>
-      h2 {
-         color: goldenrod;
+      
+         body {
+            background-color: bisque;
+            background-image: url(https://tse2.mm.bing.net/th/id/OIP.jTJTJa5asvHET_fCRo4HCAHaEM?pid=Api&P=0&h=180);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed ;
+
+         }
+         #grad1 {
+        height: 200px;
+        background-color: red;/* For browsers that do not support gradients*/
+        background-image: linear-gradient(to top right, #51e2f5,#9df9ef,#edf756,#ffa8B6,
+        #8458B3,#a28089,#ff1d58);
+      }
+      /*animation code*/
+      @keyframes example{
+        0% {background-color: red;}
+        25% {background-color: yellow;}
+        50% {background-color: green;} 
+        100%{background-color: blue;}
+      }
+      /* the element to apply the aanimation to*/
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
       }
     </style>
-    <!-- External CSS -->
-    <Link rel="stylesheet" href="style.css">
+    
    
 </head>
 <body>
-<fieldset>
-    <!-- Inline CSS -->
-    <h2 style="color: rgb(243, 235, 242);">YOU ARE INVITED</h2>
-    <!-- internal CSS-->
-     <h2>Birthday</h2>
-     <!-- external CSS -->
-     <h3>PARTY</h3>
-    
-    <!-- inline CSS-->
-     <h2>19<sup>th</sup></h2> 
-     <!--group selecter-->
-     <h5>MONDAY</h5>
-     <p> 22 SEPTEMBER 2025<br>
-      123,SAI NAGAR KORADI ROAD<br>
-    BHOPAL </p>  
-    </fieldset> 
+  <div>hi</div>
+  <div id="grad1" style="text-align:center; margin:auto; color:#888888; font-size:40px; font-weight:bold">
+welcome to codingal
+
+  </div>
+  Hello my dear fellow friends.<br>
+  Wellcome to my web page.
 </body>
 </html>
 
